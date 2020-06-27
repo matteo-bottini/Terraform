@@ -1,5 +1,5 @@
 resource "aws_vpc" "api_vpc" {
-  cidr_block = "10.46.0.0/16"
+  cidr_block = var.cidr
 
   tags = {
     name = "main"
